@@ -43,7 +43,7 @@ public void getTrends() {
 			String conceptsURL ="http://api.walmartlabs.com/v1/search?apiKey=agevmwa5rhme979szegdj3v6&query=PHOTO%20SHADOW%20BOX%20TRAY&sort=customerRating&order=desc&numItems=5";
 			
 			HttpPost httpPost = new HttpPost(conceptsURL);
-			//httpPost.addHeader("Content-Type","application/json");;
+			//httpPost.addHeader("Content-Type","application/json");
 			CloseableHttpClient client = HttpClients.createDefault();
 			CloseableHttpResponse response = client.execute(httpPost);
 			
